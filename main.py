@@ -18,7 +18,7 @@ def ls():
             print(f"[FILE] {file.name}")
 
 
-def mini(command):
+def main(command):
     match command:
         case "ls":
             ls()
@@ -56,7 +56,7 @@ Type "help" to see commands
 
 while True:
     command = input(f"\n{time.ctime()} : > ").strip()
-    check = mini(command)
+    check = main(command)
 
     if check == 0:
         break
